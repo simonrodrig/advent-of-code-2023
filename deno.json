@@ -1,0 +1,23 @@
+{
+  "fmt": {
+    "indentWidth": 2,
+    "lineWidth": 80,
+    "semiColons": true,
+    "singleQuote": true,
+    "useTabs": false,
+    "proseWrap": "always"
+  },
+  "lint": {
+  },
+  "tasks": {
+    "start": "deno run \"$INIT_CWD\"/main.ts",
+    "start:sample": "deno run \"$INIT_CWD\"/main.ts < sample.txt",
+    "start:1": "deno run \"$INIT_CWD\"/main.ts < 1.txt",
+    "start:2": "deno run \"$INIT_CWD\"/main.ts < 2.txt",
+    "dev": "deno run --watch \"$INIT_CWD\"/main.ts"
+  },
+  "imports": {
+    "std/": "https://deno.land/std@0.208.0/",
+    "utils": "./utils/mod.ts"
+  }
+}
